@@ -66,18 +66,42 @@
 
 .signin .signin-card .action{
     display: flex;
+    border-top: 1px solid #ddd;
 }
 
 .signin .signin-card .action a{
     flex-grow: 1;
     text-align: center;
-    padding: 2opx 0;
+    padding: 20px 0;
     color: #555;
     font-size: 14px;
     position: relative;
+}
+
+.signin .signin-card .action a{
     border-right: 1px solid #ddd;
 }
 
 .signin .signin-card.action a:last-child{
-    color: #006633;
+    border-right: none;
+}
+
+/* .signin .signin-card .action a::before{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: #ddd;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.signin .signin-card .action a:first-child{
+    display: none;
+} */
+
+.signin .signin-card .action a:hover{
+    text-decoration: underline;
 }
